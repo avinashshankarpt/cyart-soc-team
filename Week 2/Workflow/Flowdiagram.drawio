@@ -1,0 +1,73 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36" version="29.5.2">
+  <diagram name="Phishing Attack Flow" id="vyUstpQBU3L5yUOWPC65">
+    <mxGraphModel dx="1042" dy="527" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="s2roG12GrpkYnEK9DsbL-1" parent="1" style="rounded=1;whiteSpace=wrap;" value="Attacker" vertex="1">
+          <mxGeometry height="50" width="140" x="100" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="s2roG12GrpkYnEK9DsbL-2" parent="1" style="rounded=1;" value="Phishing Email Sent" vertex="1">
+          <mxGeometry height="50" width="160" x="100" y="120" as="geometry" />
+        </mxCell>
+        <mxCell id="s2roG12GrpkYnEK9DsbL-3" parent="1" style="rounded=1;" value="User Receives Email" vertex="1">
+          <mxGeometry height="50" width="160" x="100" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="s2roG12GrpkYnEK9DsbL-4" parent="1" style="rounded=1;" value="User Clicks Link" vertex="1">
+          <mxGeometry height="50" width="160" x="100" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="s2roG12GrpkYnEK9DsbL-5" parent="1" style="rounded=1;" value="Fake Login Page" vertex="1">
+          <mxGeometry height="50" width="160" x="100" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="s2roG12GrpkYnEK9DsbL-6" parent="1" style="rounded=1;" value="Credentials Stolen" vertex="1">
+          <mxGeometry height="50" width="160" x="100" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="s2roG12GrpkYnEK9DsbL-7" parent="1" style="rounded=1;fillColor=#ffe6cc;" value="SOC Alert Triggered" vertex="1">
+          <mxGeometry height="50" width="180" x="350" y="190" as="geometry" />
+        </mxCell>
+        <mxCell id="s2roG12GrpkYnEK9DsbL-8" parent="1" style="rounded=1;" value="Investigation Started" vertex="1">
+          <mxGeometry height="50" width="180" x="350" y="260" as="geometry" />
+        </mxCell>
+        <mxCell id="s2roG12GrpkYnEK9DsbL-9" parent="1" style="rounded=1;" value="Endpoint Isolated" vertex="1">
+          <mxGeometry height="50" width="180" x="350" y="330" as="geometry" />
+        </mxCell>
+        <mxCell id="s2roG12GrpkYnEK9DsbL-10" parent="1" style="rounded=1;" value="Indicators Blocked" vertex="1">
+          <mxGeometry height="50" width="180" x="350" y="400" as="geometry" />
+        </mxCell>
+        <mxCell id="s2roG12GrpkYnEK9DsbL-11" parent="1" style="rounded=1;" value="Credentials Reset" vertex="1">
+          <mxGeometry height="50" width="180" x="350" y="470" as="geometry" />
+        </mxCell>
+        <mxCell id="s2roG12GrpkYnEK9DsbL-12" edge="1" parent="1" source="s2roG12GrpkYnEK9DsbL-1" target="s2roG12GrpkYnEK9DsbL-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s2roG12GrpkYnEK9DsbL-13" edge="1" parent="1" source="s2roG12GrpkYnEK9DsbL-2" target="s2roG12GrpkYnEK9DsbL-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s2roG12GrpkYnEK9DsbL-14" edge="1" parent="1" source="s2roG12GrpkYnEK9DsbL-3" target="s2roG12GrpkYnEK9DsbL-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s2roG12GrpkYnEK9DsbL-15" edge="1" parent="1" source="s2roG12GrpkYnEK9DsbL-4" target="s2roG12GrpkYnEK9DsbL-5">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s2roG12GrpkYnEK9DsbL-16" edge="1" parent="1" source="s2roG12GrpkYnEK9DsbL-5" target="s2roG12GrpkYnEK9DsbL-6">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s2roG12GrpkYnEK9DsbL-17" edge="1" parent="1" source="s2roG12GrpkYnEK9DsbL-3" target="s2roG12GrpkYnEK9DsbL-7">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s2roG12GrpkYnEK9DsbL-18" edge="1" parent="1" source="s2roG12GrpkYnEK9DsbL-7" target="s2roG12GrpkYnEK9DsbL-8">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s2roG12GrpkYnEK9DsbL-19" edge="1" parent="1" source="s2roG12GrpkYnEK9DsbL-8" target="s2roG12GrpkYnEK9DsbL-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s2roG12GrpkYnEK9DsbL-20" edge="1" parent="1" source="s2roG12GrpkYnEK9DsbL-9" target="s2roG12GrpkYnEK9DsbL-10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="s2roG12GrpkYnEK9DsbL-21" edge="1" parent="1" source="s2roG12GrpkYnEK9DsbL-10" target="s2roG12GrpkYnEK9DsbL-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
