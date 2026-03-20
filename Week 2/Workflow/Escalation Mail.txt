@@ -1,0 +1,14 @@
+Subject : Escalation: Critical Ransomware Alert on Server-X
+
+Hi Team,
+
+A critical ransomware alert has been detected on Server-X requiring immediate escalation. The system shows execution of a suspicious file (crypto_locker.exe) and outbound communication with IP address 192.168.1.50, indicating possible compromise and command-and-control activity.
+
+Multiple indicators suggest active malicious behavior, and there is a high risk of encryption or lateral movement within the network. Initial triage confirms suspicious authentication and process activity.
+
+Kindly prioritize this incident for deeper investigation, containment, and remediation. Immediate actions such as isolating the host and analyzing affected systems are recommended.
+
+Please advise on further steps.
+
+Regards,
+SOC Analyst
