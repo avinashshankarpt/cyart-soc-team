@@ -1,25 +1,73 @@
-# Week 3 - SOC Advanced Operations
+ # Week 3 - SOC Advanced Operations
 
-## Overview
-This folder contains Week 3 SOC work, including:
-- Advanced Log Analysis
-- Threat Intelligence Integration
-- Incident Escalation Practice
-- Alert Triage with Threat Intelligence
-- Evidence Preservation and Analysis
-- Capstone Project
+## 🔍 Overview
 
-## Folder Structure
+This project demonstrates advanced SOC operations including:
 
-- `Documentation/` → PDFs, notes, screenshots
-- `Workflow/` → Step-by-step workflow and process notes
+* Log Correlation
+* Anomaly Detection
+* Log Enrichment
+* Threat Intelligence Integration
+* Incident Escalation
+* Alert Triage
+* Evidence Collection
+* Full SOC Workflow Simulation
 
-## Tools Used
-- Elastic Security
-- Wazuh
-- TheHive
-- AlienVault OTX
-- VirusTotal
-- Velociraptor
-- CrowdSec
-- Metasploit
+---
+
+## 🛠 Tools Used
+
+* Elastic Security (ELK Stack)
+* Wazuh SIEM
+* AlienVault OTX
+* TheHive
+* CrowdSec
+* Velociraptor
+* Metasploit
+
+---
+
+## 📊 Key Outcomes
+
+### 1. Log Correlation
+
+* Detected failed login (Event ID 4625)
+* Correlated with outbound traffic
+
+### 2. Anomaly Detection
+
+* Rule: `bytes_out > 1000000`
+* Generated 6 high severity alerts
+
+### 3. Log Enrichment
+
+* GeoIP added country and location data
+
+### 4. Threat Intelligence
+
+* Integrated OTX with Wazuh
+* Detected malicious IP
+
+### 5. Incident Escalation
+
+* Case created in TheHive
+* Escalated to Tier 2
+
+### 6. Evidence Collection
+
+* Memory dump acquired
+* SHA256 hash verified
+
+### 7. Capstone
+
+* Simulated Samba exploit
+* Detected, blocked, escalated, reported
+
+---
+
+## 📌 Conclusion
+
+This project simulates real-world SOC operations and demonstrates detection, response, and investigation capabilities.
+
+---
+
