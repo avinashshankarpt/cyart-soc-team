@@ -51,3 +51,18 @@
 
 ---
 
+[ Log Sources ]
+   (Firewall, Endpoint, Server Logs)
+            ↓
+[ ELK Stack (Elasticsearch + Kibana) ]
+            ↓
+[ Detection Rule (SIEM Rule) ]
+            ↓
+[ Alert Generated ]
+            ↓
+[ Wazuh (Alert Enrichment & Correlation) ]
+            ↓
+[ TheHive (Case Management) ]
+            ↓
+[ SOC Analyst Response ]
+   (Investigate → Contain → Report)
