@@ -64,7 +64,46 @@ This project demonstrates advanced SOC operations including:
 * Detected, blocked, escalated, reported
 
 ---
-
+        +----------------------+
+        |     Log Sources      |
+        | Firewall / Endpoint  |
+        +----------------------+
+                    |
+                    v
+        +----------------------+
+        |      ELK Stack       |
+        | Elasticsearch/Kibana |
+        +----------------------+
+                    |
+                    v
+        +----------------------+
+        |   Detection Rules    |
+        |   (bytes_out > 1MB)  |
+        +----------------------+
+                    |
+                    v
+        +----------------------+
+        |        Alerts        |
+        +----------------------+
+                    |
+                    v
+        +----------------------+
+        |        Wazuh         |
+        |  Correlation + TI    |
+        +----------------------+
+                    |
+                    v
+        +----------------------+
+        |       TheHive        |
+        |   Case Management    |
+        +----------------------+
+                    |
+                    v
+        +----------------------+
+        |   SOC Response       |
+        | Investigate/Contain  |
+        +----------------------+
+        
 ## 📌 Conclusion
 
 This project simulates real-world SOC operations and demonstrates detection, response, and investigation capabilities.
