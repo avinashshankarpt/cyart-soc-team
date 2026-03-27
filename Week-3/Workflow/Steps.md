@@ -1,33 +1,53 @@
-# Workflow Steps
+ # SOC Workflow Steps
 
-## 1. Advanced Log Analysis
-- Uploaded logs into Elastic
-- Correlated Event ID 4625 with outbound traffic
-- Created anomaly detection rule
-- Added GeoIP enrichment
+## Step 1: Log Ingestion
 
-## 2. Threat Intelligence Integration
-- Imported AlienVault OTX into Wazuh
-- Matched IOC with malicious IP
-- Performed T1078 threat hunting
+* Uploaded CSV logs into Elastic
+* Created index: `advanced-log-analysis`
 
-## 3. Incident Escalation Practice
-- Created TheHive case
-- Drafted SITREP
-- Simulated SOAR workflow
+## Step 2: Log Correlation
 
-## 4. Alert Triage
-- Investigated suspicious PowerShell alert
-- Validated IOC using VirusTotal and OTX
+* Filtered Event ID 4625
+* Identified suspicious outbound traffic
 
-## 5. Evidence Preservation
-- Collected volatile data using Velociraptor
-- Acquired memory dump
-- Verified SHA256 hash
+## Step 3: Anomaly Detection
 
-## 6. Capstone Project
-- Simulated Samba exploit
-- Detected attack in Wazuh
-- Contained with CrowdSec
-- Escalated through TheHive
-- Reported findings
+* Created detection rule:
+  bytes_out > 1000000
+* Generated alerts
+
+## Step 4: Log Enrichment
+
+* Created GeoIP pipeline
+* Enriched destination_ip
+
+## Step 5: Threat Intelligence
+
+* Imported OTX feed into Wazuh
+* Created custom IOC rule
+
+## Step 6: Threat Hunting
+
+* Query used:
+  rule.mitre.id:"T1078"
+
+## Step 7: Incident Escalation
+
+* Created case in TheHive
+* Escalated to Tier 2
+
+## Step 8: Evidence Collection
+
+* Used Velociraptor
+* Collected memory dump
+* Verified using SHA256
+
+## Step 9: Capstone Simulation
+
+* Exploited Samba (Metasploit)
+* Detected in Wazuh
+* Blocked using CrowdSec
+* Escalated via TheHive
+
+---
+
